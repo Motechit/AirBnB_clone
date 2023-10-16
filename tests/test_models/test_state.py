@@ -12,7 +12,7 @@ from models.base_model import BaseModel
 
 
 class TestState_instantiation(unittest.TestCase):
-    """This is the unittests testing for the instantiation of the State class"""
+    """This unittest tests for the instantiation of the State class"""
 
     def test_no_args_instantiates(self):
         self.assertEqual(State, type(State()))
@@ -87,7 +87,7 @@ class TestState_instantiation(unittest.TestCase):
         self.assertEqual(str(type(b)), "<class 'models.state.State'>")
         self.assertIsInstance(b, State)
         self.assertTrue(issubclass(type(b), BaseModel))
-    
+
 
 if __name__ == "__main__":
     unittest.main()

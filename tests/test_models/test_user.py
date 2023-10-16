@@ -1,4 +1,3 @@
-#!/usr/bin/env python3
 #!/usr/bin/python3
 """This is the unittests for user.py file"""
 
@@ -10,6 +9,7 @@ from models.base_model import BaseModel
 from datetime import datetime
 from time import sleep
 import uuid
+
 
 class TestUser_instantiation(unittest.TestCase):
     """This is the unittests for user.py file"""
@@ -78,13 +78,13 @@ class TestUser_instantiation(unittest.TestCase):
         self.assertEqual(user.password, "")
 
     def test_first_name_attr(self):
-        """It checks that the first_name attribute exists and is an empty string"""
+        """It checks the first_name attribute exists and is an empty string"""
         user = User()
         self.assertTrue(hasattr(user, "first_name"))
         self.assertEqual(user.first_name, "")
 
     def test_last_name_attr(self):
-        """It checks that the last_name attribute exists and is an empty string"""
+        """It checks the last_name attribute exists and is an empty string"""
         user = User()
         self.assertTrue(hasattr(user, "last_name"))
         self.assertEqual(user.last_name, "")

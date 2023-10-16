@@ -13,6 +13,7 @@ import os
 from models import storage
 from models.base_model import BaseModel
 
+
 class TestCity(unittest.TestCase):
     """This is the city class test case"""
 

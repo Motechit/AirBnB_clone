@@ -119,6 +119,7 @@ class TestReview_instantiation(unittest.TestCase):
         with self.assertRaises(TypeError):
             Review(id=None, created_at=None, updated_at=None)
 
+
 class TestReview(unittest.TestCase):
     """It is the review class test"""
 
@@ -164,6 +165,7 @@ class TestReview(unittest.TestCase):
 
     def test_to_dict(self):
         self.assertTrue('to_dict' in dir(self.review))
+
 
 if __name__ == "__main__":
     unittest.main()

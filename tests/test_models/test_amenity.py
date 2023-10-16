@@ -13,6 +13,7 @@ import json
 from models.engine.file_storage import FileStorage
 from models import storage
 
+
 class TestAmenity(unittest.TestCase):
     """This is the amenity model class test case"""
 
@@ -38,6 +39,7 @@ class TestAmenity(unittest.TestCase):
         self.assertIsNotNone(Amenity.__doc__)
 
     a = Amenity()
+
     def test_has_attributes(self):
         """It checks the existence of the attributes"""
         self.assertTrue(hasattr(self.a, 'name'))

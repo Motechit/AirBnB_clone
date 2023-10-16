@@ -99,6 +99,7 @@ class TestPlace(unittest.TestCase):
         with self.assertRaises(TypeError):
             pl.save(None)
 
+
 class TestPlace_to_dict(unittest.TestCase):
     """This is the unittest for testing to_dict mthd"""
 
